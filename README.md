@@ -5,13 +5,13 @@
 
 This project explores what affects university students' CGPA based on data we collected ourselves through **face-to-face surveys**. We asked students about their study habits, screen time, sleep, stress, and more — then analyzed how these factors relate to academic performance.
 
-## Data Collection
 
-* **Method:** In-person surveys (not scraped or downloaded — we did the work ourselves)
-* **Files:**
+## 🗂 Dataset
+Training Data: hfinal.csv
+Testing Data: final.csv
+Sample Size: 50+ university students
+Data was collected in person, ensuring authenticity and diversity across responses.
 
-  * `hfinal.csv`: training data
-  * `final.csv`: test data
 
 Each row represents a student. Columns include things like:
 
@@ -20,16 +20,15 @@ Each row represents a student. Columns include things like:
 * `SGPA` / `PreviousSGPA`: Semester GPAs
 * `Weeklyscreentime`: Hours of screen time
 * `academicsatisfactionrating`, `Stressrating`, etc.
-
+  
+<img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/f5384ba2-bf78-4be4-94be-4559c1827245" width="400">
+<br><br>
 ## What the Code Does
 <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/7bb1e704-6026-48f9-8435-2f4d40101348" width="75">&nbsp;
+
 ### 1. Load the Data
 
 Reads both training and testing CSVs and stores them as data frames.
-
-### 2. Summary Statistics
-
-Uses `summary()` to print mean, median, min, max — just to get a feel for the data.
 
 ### 3. Visualizations
 
@@ -56,17 +55,18 @@ We check the model summary to find which variables are significant (based on p-v
 
 Then we use this model to predict CGPAs for new/test data.
 
-### 5. Correlation Matrix
+### 5. Correlation Matrix 
+  <img src="https://user-images.githubusercontent.com/74038190/226127923-0e8b7792-7b3c-462b-951b-63c96ba1a5af.gif" width="100">
 
-   <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/a2605358-6b87-44ab-87fb-20dcdc5f9ef2" width="75">&nbsp;
 Generates a correlation matrix for all variables, to spot strong/weak relationships.
 
 ## Takeaways
-<img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/6f28d73e-0d7e-4a6c-8ddf-bb24b69a71c0" width="400">
+
+<img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/491e3e44-11a0-487a-b07b-717f677bbe4a" width="400">
 <br><br>
-* **SGPA**, **previous SGPA**, and **academic satisfaction** were the best predictors of CGPA.
-* **Screen time** and **sleep** had weaker but noticeable effects.
-* Not everything showed a clear trend — some results were surprising, which is why we included so many visualizations.
+SGPA, previous SGPA, and academic satisfaction were the best predictors of CGPA.
+Screen time and sleep had weaker but noticeable effects.
+Not everything showed a clear trend — some results were surprising, which is why we included so many visualizations.
 
 ## Why This Matters
 
