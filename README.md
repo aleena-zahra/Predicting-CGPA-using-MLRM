@@ -23,14 +23,14 @@ Each row represents a student. Columns include things like:
   
 <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/f5384ba2-bf78-4be4-94be-4559c1827245" width="400">
 <br><br>
-## What the Code Does
-<img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/7bb1e704-6026-48f9-8435-2f4d40101348" width="75">&nbsp;
+
+## What the Code Does <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/7bb1e704-6026-48f9-8435-2f4d40101348" width="75">&nbsp;
 
 ### 1. Load the Data
 
 Reads both training and testing CSVs and stores them as data frames.
 
-### 3. Visualizations
+### 2. Visualizations
 
    <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/7cc5988c-f607-4d4f-ab01-360a4f9321eb" width="75">&nbsp;
 Lots of them:
@@ -43,7 +43,7 @@ Lots of them:
 
 Plots are grouped in grids using `par(mfrow=...)` for easier comparison.
 
-### 4. Multiple Linear Regression (MLRM)
+### 3. Multiple Linear Regression (MLRM)
 
 Builds a model to predict CGPA using:
 
@@ -55,7 +55,7 @@ We check the model summary to find which variables are significant (based on p-v
 
 Then we use this model to predict CGPAs for new/test data.
 
-### 5. Correlation Matrix 
+### 4. Correlation Matrix 
   <img src="https://user-images.githubusercontent.com/74038190/226127923-0e8b7792-7b3c-462b-951b-63c96ba1a5af.gif" width="100">
 
 Generates a correlation matrix for all variables, to spot strong/weak relationships.
