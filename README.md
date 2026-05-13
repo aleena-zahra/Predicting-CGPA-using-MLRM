@@ -1,7 +1,8 @@
 # <img src="https://user-images.githubusercontent.com/74038190/213844263-a8897a51-32f4-4b3b-b5c2-e1528b89f6f3.png" width="50px" /> &nbsp; Predicting CGPA using MLRM  &nbsp; <img src="https://user-images.githubusercontent.com/74038190/213844263-a8897a51-32f4-4b3b-b5c2-e1528b89f6f3.png" width="50px" /> 
 
+## Overview
 
-<a href="https://github.com/Anmol-Baranwal/GIFs-For-Readme"><img src="https://forthebadge.com/images/badges/built-with-love.svg" width="130" alt="made with love  markdown badge" ></a> 
+This project applies Multiple Linear Regression (MLR) techniques to predict student CGPA (Cumulative Grade Point Average) from academic and demographic factors. The approach showcases the utility of statistical modeling in educational data mining.
 
 This project explores what affects university students' CGPA based on data we collected ourselves through **face-to-face surveys**. We asked students about their study habits, screen time, sleep, stress, and more — then analyzed how these factors relate to academic performance.
 
@@ -24,52 +25,35 @@ Each row represents a student. Columns include things like:
 <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/f5384ba2-bf78-4be4-94be-4559c1827245" width="400">
 <br><br>
 
-## What the Code Does <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/7bb1e704-6026-48f9-8435-2f4d40101348" width="75">&nbsp;
 
-### 1. Load the Data
+## Project Significance
 
-Reads both training and testing CSVs and stores them as data frames.
+- **Early Intervention:** Enables institutions to flag students at risk of poor academic outcomes and offer timely support.
+- **Performance Analytics:** Highlights key predictors affecting CGPA, aiding curricular and policy adjustments.
+- **Model Transparency:** Demonstrates the interpretability and practicality of regression-based approaches for educational stakeholders.
 
-### 2. Visualizations
+## Features
 
-   <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/7cc5988c-f607-4d4f-ab01-360a4f9321eb" width="75">&nbsp;
-Lots of them:
+- **Data Preparation:** Cleans and preprocesses input features relevant to CGPA.
+- **Model Building:** Trains and evaluates MLRM to estimate academic performance.
+- **Result Interpretation:** Analyzes coefficients and identifies factors with the strongest impact.
 
-* **Scatter plots** to see how each variable correlates with CGPA
-* **Histograms** to check distributions
-* **Boxplots** to catch outliers
-* **Pie charts** for categorical variables like stress and relaxation habits
-* **Bar plots** for frequency of responses
+## Usage
 
-Plots are grouped in grids using `par(mfrow=...)` for easier comparison.
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/aleena-zahra/Predicting-CGPA-using-MLRM.git
+    ```
+2. **Open the R scripts in RStudio or another R-compatible IDE.**
+3. **Install Dependencies:** Commonly used packages include `stats`, `tidyverse`, `caret`, etc.
+4. **Run the analysis** as detailed in the script.
 
-### 3. Multiple Linear Regression (MLRM)
+## Contributing
 
-Builds a model to predict CGPA using:
+Feedback and extension ideas (e.g., adding more features, trying new models) are appreciated.
 
-```r
-lm(CGPA ~ SGPA + Weeklyscreentime + academicsatisfactionrating + PreviousSGPA)
-```
+## License
 
-We check the model summary to find which variables are significant (based on p-values).
-
-Then we use this model to predict CGPAs for new/test data.
-
-### 4. Correlation Matrix 
-  <img src="https://user-images.githubusercontent.com/74038190/226127923-0e8b7792-7b3c-462b-951b-63c96ba1a5af.gif" width="100">
-
-Generates a correlation matrix for all variables, to spot strong/weak relationships.
-
-## Takeaways
-
-<img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/491e3e44-11a0-487a-b07b-717f677bbe4a" width="400">
-<br><br>
-SGPA, previous SGPA, and academic satisfaction were the best predictors of CGPA.
-Screen time and sleep had weaker but noticeable effects.
-Not everything showed a clear trend — some results were surprising, which is why we included so many visualizations.
-
-## Why This Matters
-
-We wanted to understand how student habits actually link to performance, based on real data — not assumptions. This could help identify what really matters when it comes to doing well academically.
+Released under the MIT License. See `LICENSE` for details.
 
 
